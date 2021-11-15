@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background: rgb( 0, 58, 96);
+    font-family: KBH-Bold;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    overflow: hidden;
+}
+
+
+
+
+@font-face {
+    font-family: KBH-Bold;
+    src: url(./fonts/KBH-Bold.woff);
+}
+
+.screenView{
+    position: absolute;
+    width: 100%;
+    height: 1920px;
+    padding: 0;
+    background-color: rgb( 0, 58, 96);
+}
+
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+    background-color: rgb( 0, 58, 96);
+}
+
+.screenWidth{
+    margin: 0 25px;
+}
+
+.compName{
+    font-size: 2.9em;
+    align-self: center;
+}
+
+.compIntro{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 0 60px;
+}
+
+.kLogo{
+    align-self: center;
+    width: 100px;
+    height: 100px;
+}
+
+.gameOverview{
+    height: 895px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.frame{
+    border: solid #fff;
+}
+
+.gamOverHead{
+    font-size: 4em;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-family: inherit;
+    margin: 50px 0;
+}
+
+.gameBoxes{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 75%;
+}
+
+.gameBox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+}
+
+.gameBox p{
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    color: inherit;
+}
+a:active{
+    color: inherit;
+}
+
+.gameImg{
+    height: 250px;
+    width: 100%;
+}
+

@@ -1,0 +1,330 @@
+body{
+    overflow: hidden;
+    background: rgb( 0, 58, 96);
+    font-family: KBH-Bold;  
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+}
+
+@font-face {
+    font-family: KBH-Bold;
+    src: url(./fonts/KBH-Bold.woff);
+}
+
+#GAME{ 
+    background: rgb( 0, 58, 96);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;    
+   /* text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black; */
+}
+
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+    background-color: rgb( 0, 58, 96);
+}
+
+#mainFrame{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 0;
+    width: 90%;
+    padding: 0;
+}
+
+.box-size{
+    height: 1020px;
+}
+
+.frame{
+    border: solid #fff;
+}
+
+.mainGrid-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mainGrid-Grid{
+    display: grid;
+    overflow: hidden;
+}
+
+
+
+#mainFrame .randomObj{
+    border-radius: 50%;
+}
+
+
+/* << -- Game differculties -- >> */
+#mainFrame .easyGame{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 200px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(242, 196, 0);
+}
+
+#mainFrame .standardGame{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color:  rgb(70, 110, 180) ;
+}
+
+#mainFrame .hardGame{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(205, 23, 25);
+}
+
+.modeSelection{
+    font-size: 2em;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-family: inherit;
+}
+
+
+#mainFrame .game-modes h2{
+    font-size: 4em;    
+    display: flex;
+    justify-content: center;
+    
+}
+
+.game-Selectors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/** -- END of Game Differculties -- **/
+
+
+#timeInput{
+    height: 50px;
+}
+
+#mainFrame #timeGame{
+    grid-column: 50 / span 3;
+    grid-row: 49;
+    height: 350px;
+    justify-self: stretch;
+    background-color: darkturquoise;
+    display: none;
+}
+
+#mainFrame #lifeGame{
+    padding: 0;
+    margin: 0;
+    max-height: 700px;
+    grid-column: 53 / 53 ;
+    grid-row: 49 / span 3;
+    width: 350px;
+    background-color: darkslateblue;
+    display: none;
+}
+
+#mainFrame #gameStart{
+    background-color: springgreen;
+}
+
+#mainFrame #endGame{
+    height: 700px;
+    width: 1000px;
+    align-content: center;
+    align-self: center;   
+    display: flex;
+    justify-content: center;
+    
+}
+#mainFrame #endGame h1{
+    padding: auto;
+    margin: auto;
+    color: white;
+    font-size: 5em;
+    -webkit-text-stroke-color: darkmagenta;;
+}
+
+#mainFrame #gameOver{
+    text-shadow: 5px 0 0 black, -5px 0 0 black, 0 5px 0 black, 0 -5px 0 black, 5px 5px black, -5px -1px 0 black, 5px -5px 0 black, -5px 5px 0 black;
+    color: white;
+    border-radius: 12.5%;
+    font-size: 50em;
+    display: flex;
+    justify-content: center;
+}
+
+#mainFrame #gameOver h1{
+    padding: auto;
+    margin: auto;
+    color: rgb(1, 21, 78);
+    font-size: 40px;
+    -webkit-text-stroke-color: rgb(240, 21, 13);;
+}
+
+#mainFrame .modeBtn{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 350px;
+    width: 550px;
+    border-radius: 0%;
+    background-color: teal;
+    justify-content: center;
+    align-items: center;
+}
+
+/* side elements */
+
+#sideViewer{
+    display: flex;   
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-between;
+    margin: 15px ;
+    color: rgb(225, 90, 31);
+    font-size: 2em;
+}
+
+.sideEle{
+    height: 100px;
+}
+
+.sideViewEle{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#timeLeft{
+    min-width: 50px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#timeView{
+    font-size: 1.2em;
+}
+
+.text-white{
+    color: white;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+
+#livesWatcher{
+    border-radius: 20%;
+    text-align: center;
+}
+
+#livesView{
+    margin: 0;
+}
+
+.livesImg{
+    width: 15%;
+    height: auto;
+    margin: 0px 3px ;
+}
+
+#pointWatcher{
+    border-radius: 20%;
+    text-align: center;
+}
+
+#pointView{
+    color: whitesmoke;
+    margin: 0;  
+    text-align: center;
+}
+
+.infoView{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.infoBox{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.end-thumb{
+ margin-top: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+}
+
+#returnToBase{
+    background-color: lightskyblue;
+    height: 80px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+a:hover{
+    color: inherit;
+}
+a:active{
+    color: inherit;
+}
+
+.homeImg{
+    width: 35%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.homeImg p{
+    text-shadow: 0;
+}
+
+.sideBtn{
+    background-color: rgb(225, 90, 31);
+    color: white;
+    font-size: 0.8em;
+    margin: 10px 0;
+    width: 90%;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px black;
+    font-family: inherit;
+}
+/* End of Side Elements */
+
+
+

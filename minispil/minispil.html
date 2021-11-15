@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spil</title>
+</head>
+<body>
+    <div id="GAME">
+        <div id="sideViewer" class="box-size" >
+            <div class="sideViewEle" >
+                <article id="timeLeft" class="sideEle" >Tid<br><p id="timeView" class="text-white" >00:00</p></article>
+                <article id="livesWatcher" class="sideEle" >Liv<p id="livesView"><img src="./img/hjerte.png" class="livesImg" ><img src="./img/hjerte.png" class="livesImg" ><img src="./img/hjerte.png" class="livesImg" ></p></article>
+                <article id="pointWatcher" class="sideEle">Point<p id="pointView">000</p></article>
+            </div>
+            <div class="infoView">
+                <div class="infoBox">
+                    <p class="text-white">
+                        I hurtig på fingrene gælder det om at trykke på de gule, 
+                        blå eller røde bolde så snart de kommer frem på skærmen
+                    </p>
+                    <div class="end-thumb">
+                        <button id="btnEndGame" class="sideBtn" >Afslut spil</button>
+                        <button id="btnRestartGame" class="sideBtn">Spil igen</button>
+                        <a class="home" href="../frontpage/frontpage.html"><img class="homeImg" src="./img/home-KNAP orange.png"> <p class="text-white">Hjem</p></img></a>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="mainFrame" class="frame mainGrid-flex box-size">
+            <button id="lifeGame">livs spil tilstand</button>
+            <div class="game-modes">
+                <h2 class="modeSelection" >Vælg sværhedsgrad.....</h2>
+                <div class="game-Selectors">
+                    <button id="easyGame" class="easyGame modeSelection">Let</button>
+                    <button id="standardGame" class="standardGame modeSelection">Middel</button>
+                    <button id="hardGame" class="hardGame modeSelection" >Svær</button>
+                </div>
+            </div>
+            <!-- <button id="timeGame" ><input id="timeInput" autocomplete="off" ></input><p>&#128512; skriv i minutter - i felter over - længden du vil spille dette lille spil og tryk på mig -> &#128512; eller lad vær og spil i 10sekunder som standard &#128512;</p></button>
+                -->
+        </main>
+    </div>
+    <script src="funclib.js" ></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">  
+	<link rel="stylesheet" href="game.css">
+	<script type="text/javascript" src="game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find farven</title>
+</head>
+<body>
+    <div id="GAME">
+        <div id="sideViewer" class="box-size" >
+            <div class="sideViewEle" >
+                <article id="timeLeft" class="sideEle"><span id="pos">Tid tilbage</span><br><p id="timeView" class="text-white" >0:00</p></article>
+                <article id="trialWatcher" class="sideEle">Forsøg<p id="trialView">0</p></article>
+                <article id="pointWatcher" class="sideEle">Point<p id="pointView">0</p></article>
+            </div>
+            <div class="infoView">
+                <div class="infoBox">
+                    <p class="text-white">
+                        I Find farven gælder det om at finde farven, som passer til farven i den runde cirkel.                       
+                    </p>
+                    <div class="end-thumb">
+                        <button id="btnEndGame" class="sideBtn" >Afslut spil</button>
+                        <button id="btnRestartGame" class="sideBtn">Spil igen</button>
+                        <a class="home" href="../frontpage/frontpage.html"><img class="homeImg" src="./img/home-KNAP orange.png"><p class="text-white">Hjem</p></img></a>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="mainFrame" class="frame mainGrid-flex box-size">
+            
+            <div id="gameModes" class="game-modes">
+			
+                <h2 class="modeSelection">Find farven</h2>
+
+					
+				<section id="findColorGame" class="findColorGame">
+					<div id="color-dot"></div>					
+					
+					<div id="flex-container" class="flex-container">
+					
+						<!--	Content inserted dynamically  -->
+						
+					</div>					
+
+
+				</section>
+
+            </div>
+			
+        </main>
+    </div>
+
+</body>
+</html>
